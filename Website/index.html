@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landingPage.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script><script type="text/javascript" src="js/infinite-rotator.js"></script>
+
+		<meta name="google-signin-client_id" content="53849745924-juhnu10128pnt2ma7mklu6i8mpldjru6.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="login.js"></script>
+    <title>Plan.IT</title>
+  </head>
+  <body>
+	<!--Navigation Bar-->
+	
+	<div id="navbar">
+		<a class="navbar-brand" href="#" >
+			<img src="resources/Logo.png" width="40" height="40">
+      	</a>
+		<a class ="active" href="#home">Home</a>
+		
+		<div id="userInfo">
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+		</div>
+	</div>
+
+	
+    <div class ="leftSect">
+    	<h2 class = "mt-5"> Plan It </h1>
+    	<h2 class = "mt-1"> Assign It </h1>
+		<h2 class = "mt-1"> Do It and Review It </h1>
+
+	</div>
+    <div class ="rightSect">
+	    <h1 class = "mt-4"> Plan.IT </h1>
+	    <div class="text-center mt-4" class = "mainBody">
+		</pre>
+		<div id="rotating-item-wrapper">
+			<img class="rotating-item" src="resources/1.png" width="400" height="400" class="rounded" draggable = "false" alt="...">
+			<img class="rotating-item" src="resources/2.png" width="400" height="400" class="rounded" draggable = "false" alt="...">
+			<img class="rotating-item" src="resources/3.png" width="400" height="400" class="rounded" draggable = "false" alt="...">
+			<img class="rotating-item" src="resources/4.png" width="400" height="400" class="rounded" draggable = "false" alt="...">
+			<img class="rotating-item" src="resources/5.png" width="400" height="400" class="rounded" draggable = "false" alt="...">
+		<pre>
+		<div class="g-signin2" data-onsuccess="onSignIn" style="margin-left: 35%; margin-right: auto;"></div>
+
+	    </div>
+	</div>
+
+
+	<script>
+		$(window).load(function() {
+		
+		var InfiniteRotator =
+		{
+			init: function()
+			{
+				var initialFadeIn = 1000;
+				var itemInterval = 5000;
+				var fadeTime = 0;
+				var numberOfItems = $('.rotating-item').length;
+				var currentItem = 0;
+				$('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+
+				var infiniteLoop = setInterval(function(){
+					$('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+
+					if(currentItem == numberOfItems -1){
+						currentItem = 0;
+					}else{
+						currentItem++;
+					}
+					$('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+
+				}, itemInterval);
+			}
+		};
+
+		InfiniteRotator.init();
+
+		});
+	</script>
+  </body>
+</html>

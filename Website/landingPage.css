@@ -1,0 +1,124 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #c2e7fa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -25%;
+  width: 70%;
+  /* background: #ffde59; */
+  background: white;
+  transform: skew(8deg);
+  z-index: -1;
+}
+
+.headerMenuLink {
+    color:gray;
+    text-decoration: none;
+}
+    
+h1 {
+  text-align: center;
+  font-size: 75px;
+  font-weight: bolder;
+  color: black;
+  margin-top: 40px;
+}
+
+.mainBody{
+    height: 900px;
+}
+
+.headerMenuLink:hover{
+    color: darkgray;
+    text-decoration: none;
+}
+
+.modal-backdrop.fade {
+  opacity: 0.7;
+}
+
+.rightSect {
+  margin-top: 3%;
+  margin-right: 14%;
+  float: right;
+}
+
+.leftSect {
+  margin-top: 15%;
+  margin-left: 2%;
+  float: left;
+  color: #868686;
+}
+
+.rotating-item {
+  display: none;
+}
+
+/* ###############  Navbar  ################ */
+#navbar {
+  overflow: hidden;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  /*background-color: #4CAF50;*/
+  color: black;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#logoutButton {
+  float: right !important;
+  
+}
+#navbar a.profileData{
+  display: none;
+}
+.profileData{
+  display: none;
+}
+
+#loginButton{
+  float: right !important;
+}
+
+#userInfo {
+  margin-top: 15px;
+  margin-right: 20px; 
+  float: right;
+}
+
+.navbar-brand > img {
+  display: block;
+  color: black;
+}
+
+h2 {
+  font-size: 40px;
+}
