@@ -9,3 +9,4 @@ The current version of plan.it runs on the localhost and requires the user to us
 # Credits
 
 Plan.IT's creators (in alphabetical order) are Sam Avis, Ted Blake, Ace Sehat, and Jennifer Zhan.
+
