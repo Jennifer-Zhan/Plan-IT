@@ -1,0 +1,137 @@
+/* iit CSS File */ 
+  
+body {
+  font-family: Georgia, Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+#header {
+  position: relative;
+  width: 760px;
+  margin: 0 auto;
+  color: #333;
+  background-color: #eee;
+  padding: 0;
+}
+h1 {
+  position: relative;
+  top: 20px;
+  text-align: right;
+  margin: 20px 30px 0 0;
+  font-family: Palatino, Times New Roman, Times, serif;
+  font-variant: small-caps;
+}
+
+#bodyBlock {
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 30px 30px 30px;
+  color: black;
+  background-color: white;
+  border-bottom: 2px solid #888;
+}
+.messages,
+#jsMessages {
+  clear: both;
+  background-color: #ffd;
+  color: #333;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+#jsMessages {
+  display: none;
+}
+#updateMessage {
+  text-align: right;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+fieldset {
+  clear: both;
+  margin: 0;
+  padding-top: 1em; 
+  border: 1px solid #333;
+  width: 290px;
+  
+
+}
+.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+.value {
+  margin: 0 0 0.5em 0;
+}
+textarea {
+  width: 384px; 
+  background-color: #eee;
+  color: black;
+}
+input {
+  background-color: #eee;
+  color: black;
+}
+input:focus,
+textarea:focus {
+  background-color: #eed;
+  color: black;
+}
+#save {
+  float: right;
+}
+h3 {
+  margin: 1em 0 0 0;
+  background-color: #555;
+  color: #eee;
+  padding: 2px 4px;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+}
+table {
+  margin: 0;
+}
+th {
+  text-align: left;
+  padding-right: 1em;
+}
+td {
+  padding-right: 1em;
+}
+#assignmentTable {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #333;
+}
+#assignmentTable th {
+  background-color: #ddc;
+  padding: 2px 4px;
+}
+#assignmentTable td {
+  padding: 2px 4px;
+}
+#assignmentTable tr.odd td {
+  background-color: #eed;
+  color: black;
+}
+.deleteAssignment {
+  cursor: pointer;
+}
+.boxedContent {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #333;
+}
+#footer {
+  text-align: center;
+  margin: 1em 0 0 0;
+  color: #666;
+  background-color: transparent;
+}
